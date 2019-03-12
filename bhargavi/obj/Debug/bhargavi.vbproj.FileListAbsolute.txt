@@ -51,3 +51,17 @@ C:\Users\123\Desktop\bhargavi\bhargavi\bin\Debug\bhargavi.exe
 C:\Users\123\Desktop\bhargavi\bhargavi\bin\Debug\bhargavi.pdb
 C:\Users\123\Desktop\bhargavi\bhargavi\bin\Debug\bhargavi.xml
 C:\Users\123\Desktop\bhargavi\bhargavi\obj\Debug\bhargavi.LOGINFORM.resources
+C:\Users\123\Desktop\keyboardproject-master\bhargavi\bin\Debug\bhargavi.exe.config
+C:\Users\123\Desktop\keyboardproject-master\bhargavi\obj\Debug\bhargavi.exe
+C:\Users\123\Desktop\keyboardproject-master\bhargavi\obj\Debug\bhargavi.xml
+C:\Users\123\Desktop\keyboardproject-master\bhargavi\obj\Debug\bhargavi.pdb
+C:\Users\123\Desktop\keyboardproject-master\bhargavi\bin\Debug\bhargavi.exe
+C:\Users\123\Desktop\keyboardproject-master\bhargavi\bin\Debug\bhargavi.pdb
+C:\Users\123\Desktop\keyboardproject-master\bhargavi\bin\Debug\bhargavi.xml
+C:\Users\123\Desktop\keyboardproject-master\bhargavi\obj\Debug\bhargavi.ABSTRACT.resources
+C:\Users\123\Desktop\keyboardproject-master\bhargavi\obj\Debug\bhargavi.LOGINFORM.resources
+C:\Users\123\Desktop\keyboardproject-master\bhargavi\obj\Debug\bhargavi.Home.resources
+C:\Users\123\Desktop\keyboardproject-master\bhargavi\obj\Debug\bhargavi.login.resources
+C:\Users\123\Desktop\keyboardproject-master\bhargavi\obj\Debug\bhargavi.Resources.resources
+C:\Users\123\Desktop\keyboardproject-master\bhargavi\obj\Debug\bhargavi.vbproj.GenerateResource.Cache
+C:\Users\123\Desktop\keyboardproject-master\bhargavi\obj\Debug\bhargavi.registrationForm.resources

@@ -71,6 +71,7 @@ Partial Class ABSTRACT
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BackBt)
         Me.Name = "ABSTRACT"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ABSTARCT"
         Me.ResumeLayout(False)
         Me.PerformLayout()

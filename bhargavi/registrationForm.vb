@@ -1,10 +1,5 @@
-﻿Imports System.Data.OleDb
-Imports System.Data
+﻿Public Class registrationForm
 
-
-Public Class login
-
-    Dim connection As New OleDbConnection(My.Settings.logindataConnectionString)
 
     Dim Alphabets() As Char = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", ".", ",", ";", ":", "(", ")", "{", "}", "[", "]"}
 
@@ -171,9 +166,35 @@ Public Class login
         K36.Text = keyboardarr(5, 5)
 
     End Sub
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Private Sub LoginTableBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
+        Me.Validate()
+        Me.LoginTableBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.LogindataDataSet)
+
+    End Sub
+
+    Private Sub registrationForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'LogindataDataSet.loginTable' table. You can move, or remove it, as needed.
+        Me.LoginTableTableAdapter.Fill(Me.LogindataDataSet.loginTable)
+        LoginTableBindingSource.AddNew()
         Randomize()
 
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles loginbt.Click
+        Try
+            LoginTableBindingSource.EndEdit()
+            TableAdapterManager.UpdateAll(LogindataDataSet)
+            MsgBox("success")
+            Me.Close()
+            login.Show()
+
+
+        Catch ex As Exception
+            MsgBox("Error")
+
+        End Try
     End Sub
 
     Private Sub KeyGen_Click(sender As Object, e As EventArgs) Handles KeyGen.Click
@@ -186,6 +207,76 @@ Public Class login
         End If
     End Sub
 
+    Private Sub ShowPassword_CheckedChanged(sender As Object, e As EventArgs) Handles ShowPassword.CheckedChanged
+        If showpass = 0 Then
+            Password.PasswordChar = ""
+            showpass = 1
+        ElseIf showpass = 1 Then
+            Password.PasswordChar = "*"
+            showpass = 0
+        End If
+
+    End Sub
+
+    Private Sub ResetBt_Click(sender As Object, e As EventArgs) Handles ResetBt.Click
+        UserName.Text = ""
+        Password.Text = ""
+        passcode = ""
+        keyselected = 1
+        open = 0
+
+
+        For m = 0 To 5
+            For n = 0 To 5
+                keyboardarr(m, n) = ""
+            Next n
+        Next m
+        firstkeyboardfilling()
+
+    End Sub
+
+    Private Sub DeleteBt_Click(sender As Object, e As EventArgs) Handles DeleteBt.Click
+        If Password.Text.Length > 0 Then
+            Password.Text = Password.Text.Substring(0, Password.Text.Length - 1)
+            passcode = Password.Text
+
+        End If
+    End Sub
+
+    Private Sub CapitalRb_CheckedChanged(sender As Object, e As EventArgs) Handles CapitalRb.CheckedChanged
+        If keyselected = 1 Then
+
+
+            Alphabets = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", ".", ",", ";", ":", "(", ")", "{", "}", "[", "]"}
+            firstKeyboard()
+            firstkeyboardfilling()
+
+        End If
+
+    End Sub
+
+    Private Sub SmallRb_CheckedChanged(sender As Object, e As EventArgs) Handles SmallRb.CheckedChanged
+        If keyselected = 1 Then
+
+
+            Alphabets = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", ".", ",", ";", ":", "(", ")", "{", "}", "[", "]"}
+            firstKeyboard()
+            firstkeyboardfilling()
+
+        End If
+
+    End Sub
+
+    Private Sub NumberRb_CheckedChanged(sender As Object, e As EventArgs) Handles NumberRb.CheckedChanged
+        If keyselected = 1 Then
+
+
+            Alphabets = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "!", "@", "#", "$", "%", "^", "\&", "*", "-", "+", "=", "/", "?", "~", "<", ">", "\", "|", "_", "(", ")", "{", "}", "\", "[", "]"}
+            firstKeyboard()
+            firstkeyboardfilling()
+
+        End If
+    End Sub
     Private Sub C1_Click(sender As Object, e As EventArgs) Handles C1.Click
 
         If keyselected = 1 Then
@@ -261,87 +352,11 @@ Public Class login
         End If
     End Sub
 
-    Private Sub LoginBt_Click(sender As Object, e As EventArgs) Handles LoginBt.Click
-        If UserName.Text = Nothing Or Password.Text = Nothing Then
-            MsgBox("Enter credentials", MsgBoxStyle.Exclamation)
-        Else
-            If connection.State = ConnectionState.Closed Then
-                connection.Open()
-
-            End If
-            Dim cmd As New OleDbCommand("Select count(*) from loginTable where username=? and password=?", connection)
-            cmd.Parameters.AddWithValue("@1", OleDbType.VarChar).Value = UserName.Text
-            cmd.Parameters.AddWithValue("@2", OleDbType.VarChar).Value = Password.Text
-            Dim count = Convert.ToInt32(cmd.ExecuteScalar())
-
-            If (count > 0) Then
-                MsgBox("Login success", MsgBoxStyle.Exclamation)
-            Else
-                MsgBox("Account not found", MsgBoxStyle.Critical)
-            End If
-        End If
-    End Sub
-
-    Private Sub SmallRb_CheckedChanged(sender As Object, e As EventArgs) Handles SmallRb.CheckedChanged
-        If keyselected = 1 Then
-
-
-            Alphabets = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", ".", ",", ";", ":", "(", ")", "{", "}", "[", "]"}
-            firstKeyboard()
-            firstkeyboardfilling()
-
-        End If
+    Private Sub Homebt_Click(sender As Object, e As EventArgs) Handles Homebt.Click
+        Me.Close()
+        Home.Show()
 
     End Sub
-
-    Private Sub CapitalRb_CheckedChanged(sender As Object, e As EventArgs) Handles CapitalRb.CheckedChanged
-        If keyselected = 1 Then
-
-
-            Alphabets = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", ".", ",", ";", ":", "(", ")", "{", "}", "[", "]"}
-            firstKeyboard()
-            firstkeyboardfilling()
-
-        End If
-
-    End Sub
-
-    Private Sub NumberRb_CheckedChanged(sender As Object, e As EventArgs) Handles NumberRb.CheckedChanged
-        If keyselected = 1 Then
-
-
-            Alphabets = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "!", "@", "#", "$", "%", "^", "\&", "*", "-", "+", "=", "/", "?", "~", "<", ">", "\", "|", "_", "(", ")", "{", "}", "\", "[", "]"}
-            firstKeyboard()
-            firstkeyboardfilling()
-
-        End If
-    End Sub
-
-    Private Sub ResetBt_Click(sender As Object, e As EventArgs) Handles ResetBt.Click
-        UserName.Text = ""
-        Password.Text = ""
-        passcode = ""
-        keyselected = 1
-        open = 0
-
-
-        For m = 0 To 5
-            For n = 0 To 5
-                keyboardarr(m, n) = ""
-            Next n
-        Next m
-        firstkeyboardfilling()
-
-    End Sub
-
-    Private Sub DeleteBt_Click(sender As Object, e As EventArgs) Handles DeleteBt.Click
-        If Password.Text.Length > 0 Then
-            Password.Text = Password.Text.Substring(0, Password.Text.Length - 1)
-            passcode = Password.Text
-
-        End If
-    End Sub
-
     Private Sub Password_Click(sender As Object, e As EventArgs) Handles Password.Click
 
         If open = 0 Then
@@ -350,37 +365,6 @@ Public Class login
             CapitalRb.Checked = True
             open = 1
         End If
-
-    End Sub
-
-    Private Sub Password_TextChanged(sender As Object, e As EventArgs) Handles Password.TextChanged
-
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-        Password.PasswordChar = ""
-    End Sub
-
-    Private Sub ShowPassword_CheckedChanged(sender As Object, e As EventArgs) Handles ShowPassword.CheckedChanged
-
-        If showpass = 0 Then
-            Password.PasswordChar = ""
-            showpass = 1
-        ElseIf showpass = 1 Then
-            Password.PasswordChar = "*"
-            showpass = 0
-        End If
-
-
-    End Sub
-
-    Private Sub Home_Click(sender As Object, e As EventArgs) Handles Homebt.Click
-        Me.Close()
-        Home.Show()
-
-    End Sub
-
-    Private Sub UserName_TextChanged(sender As Object, e As EventArgs) Handles UserName.TextChanged
 
     End Sub
 End Class

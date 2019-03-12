@@ -26,7 +26,6 @@ Partial Class login
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.UserName = New System.Windows.Forms.TextBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.ResetBt = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Password = New System.Windows.Forms.TextBox()
@@ -73,6 +72,8 @@ Partial Class login
         Me.K3 = New System.Windows.Forms.Button()
         Me.K2 = New System.Windows.Forms.Button()
         Me.K1 = New System.Windows.Forms.Button()
+        Me.ShowPassword = New System.Windows.Forms.CheckBox()
+        Me.Homebt = New System.Windows.Forms.Button()
         Me.KeyGen = New System.Windows.Forms.Button()
         Me.C1 = New System.Windows.Forms.Button()
         Me.C2 = New System.Windows.Forms.Button()
@@ -80,26 +81,31 @@ Partial Class login
         Me.C4 = New System.Windows.Forms.Button()
         Me.C6 = New System.Windows.Forms.Button()
         Me.C5 = New System.Windows.Forms.Button()
-        Me.ShowPassword = New System.Windows.Forms.CheckBox()
-        Me.Homebt = New System.Windows.Forms.Button()
+        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(216, 17)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(90, 13)
+        Me.Label1.Size = New System.Drawing.Size(137, 18)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "LOGIN SESSION"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(41, 52)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(41, 48)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(74, 13)
+        Me.Label2.Size = New System.Drawing.Size(101, 18)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "USER NAME:"
         '
@@ -115,19 +121,11 @@ Partial Class login
         'UserName
         '
         Me.UserName.AcceptsReturn = True
-        Me.UserName.Location = New System.Drawing.Point(121, 49)
+        Me.UserName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UserName.Location = New System.Drawing.Point(151, 44)
         Me.UserName.Name = "UserName"
-        Me.UserName.Size = New System.Drawing.Size(185, 20)
+        Me.UserName.Size = New System.Drawing.Size(185, 26)
         Me.UserName.TabIndex = 3
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.BackColor = System.Drawing.SystemColors.Info
-        Me.RichTextBox1.Location = New System.Drawing.Point(25, 110)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(534, 272)
-        Me.RichTextBox1.TabIndex = 4
-        Me.RichTextBox1.Text = ""
         '
         'ResetBt
         '
@@ -141,18 +139,20 @@ Partial Class login
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(42, 80)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(42, 77)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(73, 13)
+        Me.Label4.Size = New System.Drawing.Size(100, 18)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "PASSWORD:"
         '
         'Password
         '
-        Me.Password.Location = New System.Drawing.Point(121, 77)
+        Me.Password.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Password.Location = New System.Drawing.Point(151, 74)
         Me.Password.Name = "Password"
-        Me.Password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(35)
-        Me.Password.Size = New System.Drawing.Size(185, 20)
+        Me.Password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.Password.Size = New System.Drawing.Size(185, 26)
         Me.Password.TabIndex = 7
         '
         'DeleteBt
@@ -558,12 +558,32 @@ Partial Class login
         Me.K1.TabIndex = 0
         Me.K1.UseVisualStyleBackColor = True
         '
+        'ShowPassword
+        '
+        Me.ShowPassword.AutoSize = True
+        Me.ShowPassword.ForeColor = System.Drawing.Color.Silver
+        Me.ShowPassword.Location = New System.Drawing.Point(341, 81)
+        Me.ShowPassword.Name = "ShowPassword"
+        Me.ShowPassword.Size = New System.Drawing.Size(101, 17)
+        Me.ShowPassword.TabIndex = 33
+        Me.ShowPassword.Text = "Show password"
+        Me.ShowPassword.UseVisualStyleBackColor = True
+        '
+        'Homebt
+        '
+        Me.Homebt.Location = New System.Drawing.Point(263, 350)
+        Me.Homebt.Name = "Homebt"
+        Me.Homebt.Size = New System.Drawing.Size(75, 23)
+        Me.Homebt.TabIndex = 34
+        Me.Homebt.Text = "HOME"
+        Me.Homebt.UseVisualStyleBackColor = True
+        '
         'KeyGen
         '
         Me.KeyGen.BackgroundImage = Global.bhargavi.My.Resources.Resources.KEYBOARD_ICON_MINI1
-        Me.KeyGen.Location = New System.Drawing.Point(270, 75)
+        Me.KeyGen.Location = New System.Drawing.Point(300, 72)
         Me.KeyGen.Name = "KeyGen"
-        Me.KeyGen.Size = New System.Drawing.Size(36, 22)
+        Me.KeyGen.Size = New System.Drawing.Size(36, 28)
         Me.KeyGen.TabIndex = 32
         Me.KeyGen.UseVisualStyleBackColor = True
         '
@@ -621,25 +641,47 @@ Partial Class login
         Me.C5.TabIndex = 23
         Me.C5.UseVisualStyleBackColor = True
         '
-        'ShowPassword
+        'ShapeContainer1
         '
-        Me.ShowPassword.AutoSize = True
-        Me.ShowPassword.ForeColor = System.Drawing.Color.Silver
-        Me.ShowPassword.Location = New System.Drawing.Point(311, 79)
-        Me.ShowPassword.Name = "ShowPassword"
-        Me.ShowPassword.Size = New System.Drawing.Size(101, 17)
-        Me.ShowPassword.TabIndex = 33
-        Me.ShowPassword.Text = "Show password"
-        Me.ShowPassword.UseVisualStyleBackColor = True
+        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer1.Name = "ShapeContainer1"
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape4, Me.LineShape3, Me.LineShape2, Me.LineShape1})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(584, 420)
+        Me.ShapeContainer1.TabIndex = 35
+        Me.ShapeContainer1.TabStop = False
         '
-        'Homebt
+        'LineShape1
         '
-        Me.Homebt.Location = New System.Drawing.Point(263, 350)
-        Me.Homebt.Name = "Homebt"
-        Me.Homebt.Size = New System.Drawing.Size(75, 23)
-        Me.Homebt.TabIndex = 34
-        Me.Homebt.Text = "HOME"
-        Me.Homebt.UseVisualStyleBackColor = True
+        Me.LineShape1.Name = "LineShape1"
+        Me.LineShape1.X1 = 26
+        Me.LineShape1.X2 = 557
+        Me.LineShape1.Y1 = 108
+        Me.LineShape1.Y2 = 108
+        '
+        'LineShape2
+        '
+        Me.LineShape2.Name = "LineShape2"
+        Me.LineShape2.X1 = 26
+        Me.LineShape2.X2 = 557
+        Me.LineShape2.Y1 = 385
+        Me.LineShape2.Y2 = 385
+        '
+        'LineShape3
+        '
+        Me.LineShape3.Name = "LineShape3"
+        Me.LineShape3.X1 = 558
+        Me.LineShape3.X2 = 557
+        Me.LineShape3.Y1 = 108
+        Me.LineShape3.Y2 = 385
+        '
+        'LineShape4
+        '
+        Me.LineShape4.Name = "LineShape4"
+        Me.LineShape4.X1 = 26
+        Me.LineShape4.X2 = 25
+        Me.LineShape4.Y1 = 108
+        Me.LineShape4.Y2 = 385
         '
         'login
         '
@@ -666,13 +708,13 @@ Partial Class login
         Me.Controls.Add(Me.Password)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ResetBt)
-        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.UserName)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.ShapeContainer1)
         Me.Name = "login"
-        Me.Text = "login"
+        Me.Text = "Login"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -682,7 +724,6 @@ Partial Class login
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents UserName As System.Windows.Forms.TextBox
-    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
     Friend WithEvents ResetBt As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents DeleteBt As System.Windows.Forms.Button
@@ -738,4 +779,9 @@ Partial Class login
     Friend WithEvents Password As System.Windows.Forms.TextBox
     Friend WithEvents ShowPassword As System.Windows.Forms.CheckBox
     Friend WithEvents Homebt As System.Windows.Forms.Button
+    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
+    Friend WithEvents LineShape4 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents LineShape3 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents LineShape2 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
 End Class

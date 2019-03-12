@@ -11,9 +11,10 @@
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles ProceedBt.Click
-        Me.Hide()
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles LoginBt.Click
+
         login.Show()
+        Me.Hide()
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles ExitBt.Click
@@ -29,6 +30,13 @@
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles signupbt.Click
+        registrationForm.Show()
+
+        Me.Hide()
 
     End Sub
 End Class

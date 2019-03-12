@@ -29,12 +29,13 @@ Partial Class Home
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.ProceedBt = New System.Windows.Forms.Button()
+        Me.LoginBt = New System.Windows.Forms.Button()
         Me.ExitBt = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.signupbt = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -100,14 +101,14 @@ Partial Class Home
         Me.Label8.TabIndex = 9
         Me.Label8.Text = "B.M.V.S.V.PRASAD BABU" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Assistant Professor"
         '
-        'ProceedBt
+        'LoginBt
         '
-        Me.ProceedBt.Location = New System.Drawing.Point(261, 371)
-        Me.ProceedBt.Name = "ProceedBt"
-        Me.ProceedBt.Size = New System.Drawing.Size(75, 23)
-        Me.ProceedBt.TabIndex = 10
-        Me.ProceedBt.Text = "PROCEED"
-        Me.ProceedBt.UseVisualStyleBackColor = True
+        Me.LoginBt.Location = New System.Drawing.Point(261, 371)
+        Me.LoginBt.Name = "LoginBt"
+        Me.LoginBt.Size = New System.Drawing.Size(75, 23)
+        Me.LoginBt.TabIndex = 10
+        Me.LoginBt.Text = "LOGIN"
+        Me.LoginBt.UseVisualStyleBackColor = True
         '
         'ExitBt
         '
@@ -127,6 +128,25 @@ Partial Class Home
         Me.Label2.TabIndex = 12
         Me.Label2.Text = "A SMOOTH TEXTUAL PASSWORD AUTHENTICATION SCHEME" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                    AGAINST SHOU" & _
     "LDER SURFING ATTACK "
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.Label4.Location = New System.Drawing.Point(27, 138)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(92, 13)
+        Me.Label4.TabIndex = 15
+        Me.Label4.Text = "PROJECT TITLE:"
+        '
+        'signupbt
+        '
+        Me.signupbt.Location = New System.Drawing.Point(342, 371)
+        Me.signupbt.Name = "signupbt"
+        Me.signupbt.Size = New System.Drawing.Size(75, 23)
+        Me.signupbt.TabIndex = 16
+        Me.signupbt.Text = "SIGN UP"
+        Me.signupbt.UseVisualStyleBackColor = True
         '
         'PictureBox2
         '
@@ -150,28 +170,19 @@ Partial Class Home
         Me.PictureBox1.TabIndex = 13
         Me.PictureBox1.TabStop = False
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label4.Location = New System.Drawing.Point(27, 138)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(92, 13)
-        Me.Label4.TabIndex = 15
-        Me.Label4.Text = "PROJECT TITLE:"
-        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Linen
         Me.ClientSize = New System.Drawing.Size(713, 396)
+        Me.Controls.Add(Me.signupbt)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ExitBt)
-        Me.Controls.Add(Me.ProceedBt)
+        Me.Controls.Add(Me.LoginBt)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -194,11 +205,12 @@ Partial Class Home
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents ProceedBt As System.Windows.Forms.Button
+    Friend WithEvents LoginBt As System.Windows.Forms.Button
     Friend WithEvents ExitBt As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents signupbt As System.Windows.Forms.Button
 
 End Class
