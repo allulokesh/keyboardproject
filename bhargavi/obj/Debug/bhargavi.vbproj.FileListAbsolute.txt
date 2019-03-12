@@ -65,3 +65,4 @@ C:\Users\123\Desktop\keyboardproject-master\bhargavi\obj\Debug\bhargavi.login.re
 C:\Users\123\Desktop\keyboardproject-master\bhargavi\obj\Debug\bhargavi.Resources.resources
 C:\Users\123\Desktop\keyboardproject-master\bhargavi\obj\Debug\bhargavi.vbproj.GenerateResource.Cache
 C:\Users\123\Desktop\keyboardproject-master\bhargavi\obj\Debug\bhargavi.registrationForm.resources
+C:\Users\123\Desktop\bhargavi\bhargavi\obj\Debug\bhargavi.registrationForm.resources
