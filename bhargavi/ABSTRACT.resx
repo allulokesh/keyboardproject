@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>	Authentication is a common approach to protect user information in the information systems such as ATMs.
+One of the easiest ways for user authentication uses Personal Identification Number (PIN). PINs are vulnerable to malicious attacks. The tendency of users to select easy passwords or short password makes the passwords vulnerable to many attacks like camera recording attack and adversary shoulder attacks. In this project, the proposed textual password authentication scheme is introduced as an alternative to graphical password schemes.In this technique, no need to use the traditional keyboard or even pressing the keys that represent the password characters.This technique gives the user a more secure session to enter the password.</value>
+  </data>
 </root>

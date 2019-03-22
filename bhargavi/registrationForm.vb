@@ -367,4 +367,12 @@
         End If
 
     End Sub
+
+    Private Sub Password_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Password.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub Password_TextChanged(sender As Object, e As EventArgs) Handles Password.TextChanged
+
+    End Sub
 End Class

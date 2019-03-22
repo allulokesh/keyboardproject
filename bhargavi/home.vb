@@ -1,7 +1,6 @@
 ﻿Public Class Home
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles AbstractBt.Click
-
         ABSTRACT.Show()
         Me.Hide()
 
@@ -12,7 +11,6 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles LoginBt.Click
-
         login.Show()
         Me.Hide()
     End Sub
@@ -37,6 +35,18 @@
         registrationForm.Show()
 
         Me.Hide()
+
+    End Sub
+
+    Private Sub Button1_Click_2(sender As Object, e As EventArgs) Handles Button1.Click
+        About.show()
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
 
     End Sub
 End Class

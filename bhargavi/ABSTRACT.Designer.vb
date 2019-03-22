@@ -22,17 +22,19 @@ Partial Class ABSTRACT
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ABSTRACT))
         Me.BackBt = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.SuspendLayout()
         '
         'BackBt
         '
+        Me.BackBt.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BackBt.Location = New System.Drawing.Point(424, 333)
         Me.BackBt.Name = "BackBt"
-        Me.BackBt.Size = New System.Drawing.Size(75, 23)
+        Me.BackBt.Size = New System.Drawing.Size(75, 31)
         Me.BackBt.TabIndex = 1
         Me.BackBt.Text = "BACK"
         Me.BackBt.UseVisualStyleBackColor = True
@@ -40,9 +42,10 @@ Partial Class ABSTRACT
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(29, 45)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(38, 40)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 13)
+        Me.Label1.Size = New System.Drawing.Size(91, 19)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "ABSTRACT:"
         '
@@ -55,24 +58,27 @@ Partial Class ABSTRACT
         Me.Label2.Size = New System.Drawing.Size(0, 18)
         Me.Label2.TabIndex = 3
         '
-        'TextBox1
+        'RichTextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(95, 69)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 4
+        Me.RichTextBox1.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBox1.Location = New System.Drawing.Point(33, 74)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.ReadOnly = True
+        Me.RichTextBox1.Size = New System.Drawing.Size(809, 207)
+        Me.RichTextBox1.TabIndex = 4
+        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
         'ABSTRACT
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.ClientSize = New System.Drawing.Size(592, 405)
-        Me.Controls.Add(Me.TextBox1)
+        Me.ClientSize = New System.Drawing.Size(881, 412)
+        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BackBt)
         Me.Name = "ABSTRACT"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "ABSTARCT"
+        Me.Text = "ABSTRACT"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -80,5 +86,5 @@ Partial Class ABSTRACT
     Friend WithEvents BackBt As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
 End Class

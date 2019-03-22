@@ -82,10 +82,10 @@ Partial Class login
         Me.C6 = New System.Windows.Forms.Button()
         Me.C5 = New System.Windows.Forms.Button()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -93,7 +93,7 @@ Partial Class login
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(216, 17)
+        Me.Label1.Location = New System.Drawing.Point(395, 7)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(137, 18)
         Me.Label1.TabIndex = 0
@@ -103,7 +103,7 @@ Partial Class login
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(41, 48)
+        Me.Label2.Location = New System.Drawing.Point(216, 32)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(101, 18)
         Me.Label2.TabIndex = 1
@@ -112,7 +112,7 @@ Partial Class login
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(61, 165)
+        Me.Label3.Location = New System.Drawing.Point(224, 165)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(39, 13)
         Me.Label3.TabIndex = 2
@@ -121,17 +121,18 @@ Partial Class login
         'UserName
         '
         Me.UserName.AcceptsReturn = True
-        Me.UserName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UserName.Location = New System.Drawing.Point(151, 44)
+        Me.UserName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UserName.Location = New System.Drawing.Point(325, 32)
         Me.UserName.Name = "UserName"
-        Me.UserName.Size = New System.Drawing.Size(185, 26)
+        Me.UserName.Size = New System.Drawing.Size(185, 22)
         Me.UserName.TabIndex = 3
         '
         'ResetBt
         '
-        Me.ResetBt.Location = New System.Drawing.Point(461, 132)
+        Me.ResetBt.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ResetBt.Location = New System.Drawing.Point(624, 156)
         Me.ResetBt.Name = "ResetBt"
-        Me.ResetBt.Size = New System.Drawing.Size(75, 23)
+        Me.ResetBt.Size = New System.Drawing.Size(75, 30)
         Me.ResetBt.TabIndex = 5
         Me.ResetBt.Text = "Reset"
         Me.ResetBt.UseVisualStyleBackColor = True
@@ -140,7 +141,7 @@ Partial Class login
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(42, 77)
+        Me.Label4.Location = New System.Drawing.Point(216, 68)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(100, 18)
         Me.Label4.TabIndex = 6
@@ -148,18 +149,19 @@ Partial Class login
         '
         'Password
         '
-        Me.Password.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Password.Location = New System.Drawing.Point(151, 74)
+        Me.Password.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Password.Location = New System.Drawing.Point(326, 65)
         Me.Password.Name = "Password"
         Me.Password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.Password.Size = New System.Drawing.Size(185, 26)
+        Me.Password.Size = New System.Drawing.Size(185, 22)
         Me.Password.TabIndex = 7
         '
         'DeleteBt
         '
-        Me.DeleteBt.Location = New System.Drawing.Point(461, 165)
+        Me.DeleteBt.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeleteBt.Location = New System.Drawing.Point(624, 118)
         Me.DeleteBt.Name = "DeleteBt"
-        Me.DeleteBt.Size = New System.Drawing.Size(75, 23)
+        Me.DeleteBt.Size = New System.Drawing.Size(75, 29)
         Me.DeleteBt.TabIndex = 8
         Me.DeleteBt.Text = "Delete"
         Me.DeleteBt.UseVisualStyleBackColor = True
@@ -167,7 +169,7 @@ Partial Class login
         'CapitalRb
         '
         Me.CapitalRb.AutoSize = True
-        Me.CapitalRb.Location = New System.Drawing.Point(433, 228)
+        Me.CapitalRb.Location = New System.Drawing.Point(596, 228)
         Me.CapitalRb.Name = "CapitalRb"
         Me.CapitalRb.Size = New System.Drawing.Size(46, 17)
         Me.CapitalRb.TabIndex = 16
@@ -177,7 +179,7 @@ Partial Class login
         'SmallRb
         '
         Me.SmallRb.AutoSize = True
-        Me.SmallRb.Location = New System.Drawing.Point(433, 251)
+        Me.SmallRb.Location = New System.Drawing.Point(596, 251)
         Me.SmallRb.Name = "SmallRb"
         Me.SmallRb.Size = New System.Drawing.Size(43, 17)
         Me.SmallRb.TabIndex = 17
@@ -187,7 +189,7 @@ Partial Class login
         'NumberRb
         '
         Me.NumberRb.AutoSize = True
-        Me.NumberRb.Location = New System.Drawing.Point(433, 277)
+        Me.NumberRb.Location = New System.Drawing.Point(596, 277)
         Me.NumberRb.Name = "NumberRb"
         Me.NumberRb.Size = New System.Drawing.Size(83, 17)
         Me.NumberRb.TabIndex = 18
@@ -197,7 +199,7 @@ Partial Class login
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(422, 206)
+        Me.Label5.Location = New System.Drawing.Point(585, 206)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(61, 13)
         Me.Label5.TabIndex = 19
@@ -205,9 +207,10 @@ Partial Class login
         '
         'LoginBt
         '
-        Me.LoginBt.Location = New System.Drawing.Point(159, 350)
+        Me.LoginBt.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LoginBt.Location = New System.Drawing.Point(322, 349)
         Me.LoginBt.Name = "LoginBt"
-        Me.LoginBt.Size = New System.Drawing.Size(75, 23)
+        Me.LoginBt.Size = New System.Drawing.Size(75, 24)
         Me.LoginBt.TabIndex = 20
         Me.LoginBt.Text = "LOGIN"
         Me.LoginBt.UseVisualStyleBackColor = True
@@ -258,7 +261,7 @@ Partial Class login
         Me.TableLayoutPanel1.Controls.Add(Me.K3, 2, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.K2, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.K1, 0, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(36, 118)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(199, 118)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 6
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
@@ -272,6 +275,7 @@ Partial Class login
         '
         'K36
         '
+        Me.K36.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K36.Location = New System.Drawing.Point(286, 166)
         Me.K36.Name = "K36"
         Me.K36.Size = New System.Drawing.Size(47, 23)
@@ -280,6 +284,7 @@ Partial Class login
         '
         'K35
         '
+        Me.K35.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K35.Location = New System.Drawing.Point(230, 166)
         Me.K35.Name = "K35"
         Me.K35.Size = New System.Drawing.Size(47, 23)
@@ -288,6 +293,7 @@ Partial Class login
         '
         'K34
         '
+        Me.K34.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K34.Location = New System.Drawing.Point(174, 166)
         Me.K34.Name = "K34"
         Me.K34.Size = New System.Drawing.Size(47, 23)
@@ -296,6 +302,7 @@ Partial Class login
         '
         'K33
         '
+        Me.K33.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K33.Location = New System.Drawing.Point(118, 166)
         Me.K33.Name = "K33"
         Me.K33.Size = New System.Drawing.Size(47, 23)
@@ -304,6 +311,7 @@ Partial Class login
         '
         'K32
         '
+        Me.K32.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K32.Location = New System.Drawing.Point(62, 166)
         Me.K32.Name = "K32"
         Me.K32.Size = New System.Drawing.Size(47, 23)
@@ -312,6 +320,7 @@ Partial Class login
         '
         'K31
         '
+        Me.K31.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K31.Location = New System.Drawing.Point(6, 166)
         Me.K31.Name = "K31"
         Me.K31.Size = New System.Drawing.Size(47, 23)
@@ -320,6 +329,7 @@ Partial Class login
         '
         'K30
         '
+        Me.K30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K30.Location = New System.Drawing.Point(286, 134)
         Me.K30.Name = "K30"
         Me.K30.Size = New System.Drawing.Size(47, 23)
@@ -328,6 +338,7 @@ Partial Class login
         '
         'K29
         '
+        Me.K29.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K29.Location = New System.Drawing.Point(230, 134)
         Me.K29.Name = "K29"
         Me.K29.Size = New System.Drawing.Size(47, 23)
@@ -336,6 +347,7 @@ Partial Class login
         '
         'K28
         '
+        Me.K28.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K28.Location = New System.Drawing.Point(174, 134)
         Me.K28.Name = "K28"
         Me.K28.Size = New System.Drawing.Size(47, 23)
@@ -344,6 +356,7 @@ Partial Class login
         '
         'K27
         '
+        Me.K27.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K27.Location = New System.Drawing.Point(118, 134)
         Me.K27.Name = "K27"
         Me.K27.Size = New System.Drawing.Size(47, 23)
@@ -352,6 +365,7 @@ Partial Class login
         '
         'K26
         '
+        Me.K26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K26.Location = New System.Drawing.Point(62, 134)
         Me.K26.Name = "K26"
         Me.K26.Size = New System.Drawing.Size(47, 23)
@@ -360,6 +374,7 @@ Partial Class login
         '
         'K25
         '
+        Me.K25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K25.Location = New System.Drawing.Point(6, 134)
         Me.K25.Name = "K25"
         Me.K25.Size = New System.Drawing.Size(47, 23)
@@ -368,6 +383,7 @@ Partial Class login
         '
         'K24
         '
+        Me.K24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K24.Location = New System.Drawing.Point(286, 102)
         Me.K24.Name = "K24"
         Me.K24.Size = New System.Drawing.Size(47, 23)
@@ -376,6 +392,7 @@ Partial Class login
         '
         'K23
         '
+        Me.K23.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K23.Location = New System.Drawing.Point(230, 102)
         Me.K23.Name = "K23"
         Me.K23.Size = New System.Drawing.Size(47, 23)
@@ -384,6 +401,7 @@ Partial Class login
         '
         'K22
         '
+        Me.K22.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K22.Location = New System.Drawing.Point(174, 102)
         Me.K22.Name = "K22"
         Me.K22.Size = New System.Drawing.Size(47, 23)
@@ -392,6 +410,7 @@ Partial Class login
         '
         'K21
         '
+        Me.K21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K21.Location = New System.Drawing.Point(118, 102)
         Me.K21.Name = "K21"
         Me.K21.Size = New System.Drawing.Size(47, 23)
@@ -400,6 +419,7 @@ Partial Class login
         '
         'K20
         '
+        Me.K20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K20.Location = New System.Drawing.Point(62, 102)
         Me.K20.Name = "K20"
         Me.K20.Size = New System.Drawing.Size(47, 23)
@@ -408,6 +428,7 @@ Partial Class login
         '
         'K19
         '
+        Me.K19.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K19.Location = New System.Drawing.Point(6, 102)
         Me.K19.Name = "K19"
         Me.K19.Size = New System.Drawing.Size(47, 23)
@@ -416,6 +437,7 @@ Partial Class login
         '
         'K18
         '
+        Me.K18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K18.Location = New System.Drawing.Point(286, 70)
         Me.K18.Name = "K18"
         Me.K18.Size = New System.Drawing.Size(47, 23)
@@ -424,6 +446,7 @@ Partial Class login
         '
         'K17
         '
+        Me.K17.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K17.Location = New System.Drawing.Point(230, 70)
         Me.K17.Name = "K17"
         Me.K17.Size = New System.Drawing.Size(47, 23)
@@ -432,6 +455,7 @@ Partial Class login
         '
         'K16
         '
+        Me.K16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K16.Location = New System.Drawing.Point(174, 70)
         Me.K16.Name = "K16"
         Me.K16.Size = New System.Drawing.Size(47, 23)
@@ -440,6 +464,7 @@ Partial Class login
         '
         'K15
         '
+        Me.K15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K15.Location = New System.Drawing.Point(118, 70)
         Me.K15.Name = "K15"
         Me.K15.Size = New System.Drawing.Size(47, 23)
@@ -448,6 +473,7 @@ Partial Class login
         '
         'K14
         '
+        Me.K14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K14.Location = New System.Drawing.Point(62, 70)
         Me.K14.Name = "K14"
         Me.K14.Size = New System.Drawing.Size(47, 23)
@@ -456,6 +482,7 @@ Partial Class login
         '
         'K13
         '
+        Me.K13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K13.Location = New System.Drawing.Point(6, 70)
         Me.K13.Name = "K13"
         Me.K13.Size = New System.Drawing.Size(47, 23)
@@ -464,6 +491,7 @@ Partial Class login
         '
         'K12
         '
+        Me.K12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K12.Location = New System.Drawing.Point(286, 38)
         Me.K12.Name = "K12"
         Me.K12.Size = New System.Drawing.Size(47, 23)
@@ -472,6 +500,7 @@ Partial Class login
         '
         'K11
         '
+        Me.K11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K11.Location = New System.Drawing.Point(230, 38)
         Me.K11.Name = "K11"
         Me.K11.Size = New System.Drawing.Size(47, 23)
@@ -480,6 +509,7 @@ Partial Class login
         '
         'K10
         '
+        Me.K10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K10.Location = New System.Drawing.Point(174, 38)
         Me.K10.Name = "K10"
         Me.K10.Size = New System.Drawing.Size(47, 23)
@@ -488,6 +518,7 @@ Partial Class login
         '
         'K9
         '
+        Me.K9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K9.Location = New System.Drawing.Point(118, 38)
         Me.K9.Name = "K9"
         Me.K9.Size = New System.Drawing.Size(47, 23)
@@ -496,6 +527,7 @@ Partial Class login
         '
         'K8
         '
+        Me.K8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K8.Location = New System.Drawing.Point(62, 38)
         Me.K8.Name = "K8"
         Me.K8.Size = New System.Drawing.Size(47, 23)
@@ -504,6 +536,7 @@ Partial Class login
         '
         'K7
         '
+        Me.K7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K7.Location = New System.Drawing.Point(6, 38)
         Me.K7.Name = "K7"
         Me.K7.Size = New System.Drawing.Size(47, 23)
@@ -512,6 +545,7 @@ Partial Class login
         '
         'K6
         '
+        Me.K6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K6.Location = New System.Drawing.Point(286, 6)
         Me.K6.Name = "K6"
         Me.K6.Size = New System.Drawing.Size(47, 23)
@@ -520,6 +554,7 @@ Partial Class login
         '
         'K5
         '
+        Me.K5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K5.Location = New System.Drawing.Point(230, 6)
         Me.K5.Name = "K5"
         Me.K5.Size = New System.Drawing.Size(47, 23)
@@ -528,6 +563,7 @@ Partial Class login
         '
         'K4
         '
+        Me.K4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K4.Location = New System.Drawing.Point(174, 6)
         Me.K4.Name = "K4"
         Me.K4.Size = New System.Drawing.Size(47, 23)
@@ -536,6 +572,7 @@ Partial Class login
         '
         'K3
         '
+        Me.K3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K3.Location = New System.Drawing.Point(118, 6)
         Me.K3.Name = "K3"
         Me.K3.Size = New System.Drawing.Size(47, 23)
@@ -544,6 +581,7 @@ Partial Class login
         '
         'K2
         '
+        Me.K2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K2.Location = New System.Drawing.Point(62, 6)
         Me.K2.Name = "K2"
         Me.K2.Size = New System.Drawing.Size(47, 23)
@@ -552,6 +590,7 @@ Partial Class login
         '
         'K1
         '
+        Me.K1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.K1.Location = New System.Drawing.Point(6, 6)
         Me.K1.Name = "K1"
         Me.K1.Size = New System.Drawing.Size(47, 23)
@@ -562,7 +601,7 @@ Partial Class login
         '
         Me.ShowPassword.AutoSize = True
         Me.ShowPassword.ForeColor = System.Drawing.Color.Silver
-        Me.ShowPassword.Location = New System.Drawing.Point(341, 81)
+        Me.ShowPassword.Location = New System.Drawing.Point(517, 69)
         Me.ShowPassword.Name = "ShowPassword"
         Me.ShowPassword.Size = New System.Drawing.Size(101, 17)
         Me.ShowPassword.TabIndex = 33
@@ -571,9 +610,10 @@ Partial Class login
         '
         'Homebt
         '
-        Me.Homebt.Location = New System.Drawing.Point(263, 350)
+        Me.Homebt.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Homebt.Location = New System.Drawing.Point(426, 349)
         Me.Homebt.Name = "Homebt"
-        Me.Homebt.Size = New System.Drawing.Size(75, 23)
+        Me.Homebt.Size = New System.Drawing.Size(75, 24)
         Me.Homebt.TabIndex = 34
         Me.Homebt.Text = "HOME"
         Me.Homebt.UseVisualStyleBackColor = True
@@ -581,16 +621,18 @@ Partial Class login
         'KeyGen
         '
         Me.KeyGen.BackgroundImage = Global.bhargavi.My.Resources.Resources.KEYBOARD_ICON_MINI1
-        Me.KeyGen.Location = New System.Drawing.Point(300, 72)
+        Me.KeyGen.Location = New System.Drawing.Point(476, 64)
         Me.KeyGen.Name = "KeyGen"
-        Me.KeyGen.Size = New System.Drawing.Size(36, 28)
+        Me.KeyGen.Size = New System.Drawing.Size(36, 23)
         Me.KeyGen.TabIndex = 32
         Me.KeyGen.UseVisualStyleBackColor = True
         '
         'C1
         '
+        Me.C1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.C1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.C1.Image = Global.bhargavi.My.Resources.Resources.ARROW
-        Me.C1.Location = New System.Drawing.Point(35, 317)
+        Me.C1.Location = New System.Drawing.Point(198, 317)
         Me.C1.Name = "C1"
         Me.C1.Size = New System.Drawing.Size(58, 23)
         Me.C1.TabIndex = 31
@@ -598,8 +640,10 @@ Partial Class login
         '
         'C2
         '
+        Me.C2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.C2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.C2.Image = Global.bhargavi.My.Resources.Resources.ARROW
-        Me.C2.Location = New System.Drawing.Point(93, 317)
+        Me.C2.Location = New System.Drawing.Point(255, 317)
         Me.C2.Name = "C2"
         Me.C2.Size = New System.Drawing.Size(58, 23)
         Me.C2.TabIndex = 30
@@ -607,8 +651,10 @@ Partial Class login
         '
         'C3
         '
+        Me.C3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.C3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.C3.Image = Global.bhargavi.My.Resources.Resources.ARROW
-        Me.C3.Location = New System.Drawing.Point(149, 317)
+        Me.C3.Location = New System.Drawing.Point(312, 317)
         Me.C3.Name = "C3"
         Me.C3.Size = New System.Drawing.Size(58, 23)
         Me.C3.TabIndex = 29
@@ -616,8 +662,10 @@ Partial Class login
         '
         'C4
         '
+        Me.C4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.C4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.C4.Image = Global.bhargavi.My.Resources.Resources.ARROW
-        Me.C4.Location = New System.Drawing.Point(206, 317)
+        Me.C4.Location = New System.Drawing.Point(369, 317)
         Me.C4.Name = "C4"
         Me.C4.Size = New System.Drawing.Size(58, 23)
         Me.C4.TabIndex = 28
@@ -625,17 +673,21 @@ Partial Class login
         '
         'C6
         '
+        Me.C6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.C6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.C6.Image = Global.bhargavi.My.Resources.Resources.ARROW
-        Me.C6.Location = New System.Drawing.Point(321, 317)
+        Me.C6.Location = New System.Drawing.Point(483, 317)
         Me.C6.Name = "C6"
-        Me.C6.Size = New System.Drawing.Size(58, 23)
+        Me.C6.Size = New System.Drawing.Size(60, 23)
         Me.C6.TabIndex = 27
         Me.C6.UseVisualStyleBackColor = True
         '
         'C5
         '
+        Me.C5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.C5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.C5.Image = Global.bhargavi.My.Resources.Resources.ARROW
-        Me.C5.Location = New System.Drawing.Point(263, 317)
+        Me.C5.Location = New System.Drawing.Point(426, 317)
         Me.C5.Name = "C5"
         Me.C5.Size = New System.Drawing.Size(58, 23)
         Me.C5.TabIndex = 23
@@ -647,48 +699,48 @@ Partial Class login
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape4, Me.LineShape3, Me.LineShape2, Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(584, 420)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(880, 413)
         Me.ShapeContainer1.TabIndex = 35
         Me.ShapeContainer1.TabStop = False
-        '
-        'LineShape1
-        '
-        Me.LineShape1.Name = "LineShape1"
-        Me.LineShape1.X1 = 26
-        Me.LineShape1.X2 = 557
-        Me.LineShape1.Y1 = 108
-        Me.LineShape1.Y2 = 108
-        '
-        'LineShape2
-        '
-        Me.LineShape2.Name = "LineShape2"
-        Me.LineShape2.X1 = 26
-        Me.LineShape2.X2 = 557
-        Me.LineShape2.Y1 = 385
-        Me.LineShape2.Y2 = 385
-        '
-        'LineShape3
-        '
-        Me.LineShape3.Name = "LineShape3"
-        Me.LineShape3.X1 = 558
-        Me.LineShape3.X2 = 557
-        Me.LineShape3.Y1 = 108
-        Me.LineShape3.Y2 = 385
         '
         'LineShape4
         '
         Me.LineShape4.Name = "LineShape4"
-        Me.LineShape4.X1 = 26
-        Me.LineShape4.X2 = 25
-        Me.LineShape4.Y1 = 108
-        Me.LineShape4.Y2 = 385
+        Me.LineShape4.X1 = 180
+        Me.LineShape4.X2 = 179
+        Me.LineShape4.Y1 = 104
+        Me.LineShape4.Y2 = 381
+        '
+        'LineShape3
+        '
+        Me.LineShape3.Name = "LineShape3"
+        Me.LineShape3.X1 = 712
+        Me.LineShape3.X2 = 711
+        Me.LineShape3.Y1 = 104
+        Me.LineShape3.Y2 = 381
+        '
+        'LineShape2
+        '
+        Me.LineShape2.Name = "LineShape2"
+        Me.LineShape2.X1 = 180
+        Me.LineShape2.X2 = 711
+        Me.LineShape2.Y1 = 381
+        Me.LineShape2.Y2 = 381
+        '
+        'LineShape1
+        '
+        Me.LineShape1.Name = "LineShape1"
+        Me.LineShape1.X1 = 180
+        Me.LineShape1.X2 = 711
+        Me.LineShape1.Y1 = 104
+        Me.LineShape1.Y2 = 104
         '
         'login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(584, 420)
+        Me.ClientSize = New System.Drawing.Size(880, 413)
         Me.Controls.Add(Me.Homebt)
         Me.Controls.Add(Me.ShowPassword)
         Me.Controls.Add(Me.KeyGen)
@@ -714,6 +766,7 @@ Partial Class login
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Name = "login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
