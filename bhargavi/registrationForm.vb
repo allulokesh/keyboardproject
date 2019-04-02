@@ -183,18 +183,31 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles loginbt.Click
-        Try
-            LoginTableBindingSource.EndEdit()
-            TableAdapterManager.UpdateAll(LogindataDataSet)
-            MsgBox("success")
-            Me.Close()
-            login.Show()
+        If UserName.Text.Length > 9 And UserName.Text.Length < 20 Then
+
+            If Password.Text.Length > 7 And Password.Text.Length < 21 Then
+                Try
+                    LoginTableBindingSource.EndEdit()
+                    TableAdapterManager.UpdateAll(LogindataDataSet)
+                    MsgBox("success")
+                    Me.Close()
+                    login.Show()
 
 
-        Catch ex As Exception
-            MsgBox("Error")
+                Catch ex As Exception
+                    MsgBox("Error")
 
-        End Try
+                End Try
+            Else
+                nameerror.Text = ""
+                passerror.Text = "*The password size must be between 8 to 20 characters."
+            End If
+
+        Else
+
+            nameerror.Text = "*The Username size must be between 10 to 20 characters."
+        End If
+
     End Sub
 
     Private Sub KeyGen_Click(sender As Object, e As EventArgs) Handles KeyGen.Click
